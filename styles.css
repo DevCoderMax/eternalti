@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+}
+
+.header {
+    padding: 1em;
+    text-align: center;
+    background-color: #2a2a2a;
+    color: #9a66ff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    padding: 2em;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #2e2e2e;
+    border: 2px solid #9a66ff;
+    border-radius: 10px;
+    padding: 1.5em;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.project-card h2 {
+    color: #9a66ff;
+    margin-bottom: 0.5em;
+}
+
+.project-card p {
+    font-size: 0.9em;
+    color: #bfbfbf;
+}
+
+/* Efeito hover */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(154, 102, 255, 0.3);
+}
+
+/* Status dos projetos */
+.status {
+    font-weight: bold;
+    padding: 0.2em 0.5em;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.status::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+/* Cor diferenciada para cada status */
+.status.iniciado {
+    color: #4caf50;
+}
+
+.status.iniciado::before {
+    background-color: #4caf50;
+}
+
+/* Cor diferenciada para "em andamento" */
+.status.em-andamento {
+    color: #ff9800;
+}
+
+.status.em-andamento::before {
+    background-color: #ff9800;
+}
+
+
+.status.nao-iniciado {
+    color: #ff4d4d;
+}
+
+.status.nao-iniciado::before {
+    background-color: #ff4d4d;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos TI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Projetos de TI</h1>
+    </header>
+    <main class="container">
+        <!-- Cartão do projeto invertexto_api -->
+        <div class="project-card" onclick="mostrarDetalhes('invertexto_api')">
+            <h2>invertexto_api</h2>
+            <p>Status: <span class="status iniciado">Iniciado</span></p>
+            <p>API de integração e automação para serviços...</p>
+        </div>
+        
+        <div class="project-card" onclick="mostrarDetalhes('req-ip-rotation')">
+            <h2>req-ip-rotation</h2>
+            <p>Status: <span class="status nao-iniciado">Não Iniciado</span></p>
+            <p>Projeto de rotação de IPs em requisições HTTP usando servidores gratuitos...</p>
+        </div>
+
+        <!-- Cartão do projeto eternal-stream (não iniciado) -->
+        <div class="project-card" onclick="mostrarDetalhes('eternal-stream')">
+            <h2>eternal-stream</h2>
+            <p>Status: <span class="status nao-iniciado">Não Iniciado</span></p>
+            <p>Projeto de streamings em uma plataforma só...</p>
+        </div>
+
+        <div class="project-card" onclick="mostrarDetalhes('gemini_strawberry')">
+            <h2>gemini_strawberry</h2>
+            <p>Status: <span class="status nao-iniciado">Não Iniciado</span></p>
+            <p>Projeto de streamings em uma plataforma só...</p>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
